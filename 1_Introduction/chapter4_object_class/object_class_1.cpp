@@ -20,7 +20,7 @@ int main(){
     room room1;
     room1.length=10;
     room1.breadth=20;
-    room1.height=15;
+    room1.height=12;
     cout<<" the area of room is:"<<room1.calculateArea()<<endl;
    cout <<"the volume of room is:"<<room1.calculateVolume()<<endl;
 
