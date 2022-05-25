@@ -25,7 +25,7 @@ int main(){
     room room1;
     
 
-room1.setvalues(2,3,4);
+room1.setvalues(2,3,5);
     cout<<" the area of room is:"<<room1.calculateArea()<<endl;
    cout <<"the volume of room is:"<<room1.calculateVolume()<<endl;
 
