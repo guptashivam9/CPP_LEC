@@ -11,7 +11,7 @@ public:
         width = a;
         breadth = b;
     }
-    void area()
+    void virtual area()
     {
         cout << "the area is :" << endl;
     }
@@ -24,7 +24,7 @@ public:
         width = a;
         breadth = b;
     }
-    int area()
+    void virtual area()
     {
         cout << "reactangle class area" << width * breadth << endl;
     }
@@ -37,9 +37,9 @@ public:
         width = a;
         breadth = b;
     }
-    int area()
+     void virtual area()
     {
-        cout << "the triangle area :" << 1 / 2 * (width * breadth);
+        cout << "the triangle area :" << width * breadth/2;
     }
 };
 int main()
@@ -48,9 +48,9 @@ int main()
     rectangle rec(10, 15);
     triangle tri(2, 4);
     shape = &rec;
-    shape->area();
+    shape-> area();
     shape = &tri;
-    shape->area();
+    shape-> area();
     return 0;
 }
- //when a function is amde virtual is allow a program to deccide at run time which function to call based on the TYPE of the object pointed by the pointer rather than type of the pointer its self
+ //when a function is made virtual is allow a program to deccide at run time which function to call based on the TYPE of the object pointed by the pointer rather than type of the pointer its self
